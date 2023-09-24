@@ -1,0 +1,8 @@
+all:unset //to make styling of button to none
+margin-block:10px// set top and bottom margin
+.box1.active
+{
+display:flex;
+}
+
+?. operator

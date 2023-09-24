@@ -1,0 +1,296 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Merriweather Sans','sans-serif';
+}
+img
+{
+    width: 50px;
+}
+.current-tab
+{
+    /* all: unset; */
+    color: #3f72af;
+    background-color: #f9f7f7;
+    border-radius: 8px;
+}
+
+.wrapper
+{
+    min-height: 100vh;
+    background-image: linear-gradient(160deg,#112d4e,#3f72af);
+}
+h1
+{
+    padding-top: 1rem;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+.switch-tab
+{
+    display: flex;
+    margin: 1rem auto;
+    width: 90%;
+    justify-content: space-between;
+    max-width: 550px;
+}
+.user-tab,.search-tab
+{
+    cursor: pointer;
+    user-select: none;
+    padding: 0.5rem 0.75rem;
+    transition:all 0.3s;
+}
+.grant-access.active
+{
+    display: flex;
+}
+.grant-access button:active
+{
+    scale: 0.9;
+    transition: all 0.3s;
+}
+.grant-access
+{
+    display: none;
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.grant-access p:first-of-type
+{
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.grant-access p:last-of-type
+{
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.grant-access button
+{
+    all:unset;
+    color: #3f72af;
+    cursor: pointer;
+    background-color: #f9f7f7;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+}
+.weather-data.active
+{
+    display: flex;
+}
+.weather-data
+{
+    display: none;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 90%;
+    max-width: 950px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.city-container
+{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.city-container p:first-of-type
+{
+    font-size: 2rem;
+}
+.description
+{
+    margin:0.75rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.weather-icon
+{
+    width: 110px;
+    background-color: #3f72af;
+    border-radius: 1rem;
+    margin: 10px;
+}
+.temperature
+{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.city-icon
+{
+    margin: 0px;
+    height: 40px;
+}
+.parameter-container
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.parameter
+{
+    background-color: #f9f7f7;
+    border-radius: 5%;
+    padding: 10px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.parameter img
+{
+    width: 50px;
+}
+.parameter p:first-of-type
+{
+    color: #112d4e;
+    font-size: 1.5rem;
+}
+
+.parameter p:last-of-type
+{
+    color: #112d4e;
+    font-size: 1.1rem;
+}
+.search-weather.active
+{
+    display: flex;
+}
+.search-weather
+{
+    display: none;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 90%;
+    max-width: 550px;
+}
+.search-weather .form{
+    width: 100%;
+}
+.searchCity{
+    all: unset;
+    width: 85%;
+    background-color: #dbe2ef;
+    padding: 10px;
+    border-radius: 10px;
+    color:#3f72af;
+    margin-right: 10px;
+}
+.searchCity::placeholder
+{
+    all: unset;
+}
+.search-btn
+{
+    all: unset;
+    background-color: #3f72af;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-btn:active{
+    scale: 0.9;
+    transition: 0.3s ease-in-out;
+}
+.loading.active
+{
+    display: flex;
+}
+.loading
+{
+    display: none;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.loading img
+{
+    width: 200px;
+}
+.loading p
+{
+    font-size: 2rem;
+}
+.error.active
+{
+    display: flex;
+}
+.error
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 90%;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 550px;
+}
+.error img
+{
+    width: 200px;
+}
+.error p
+{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+@media all and (max-width:582px) {
+    .parameter-container
+    {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 50px;
+    }
+    .parameter
+    {
+        width:calc(100% - 50px);
+    }
+    .search-weather .form
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .searchCity
+    {
+        width: 70%;
+    }
+    .error img
+    {
+        width: 50%;
+    }
+    .error p
+    {
+        text-align: center;
+    }
+}

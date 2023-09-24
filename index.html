@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans:wght@500&family=Montserrat&family=Poppins:wght@500&family=Quicksand&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather App</h1>
+        <div class="switch-tab">
+            <div class="user-tab">Your Weather</div>
+            <div class="search-tab">Search Weather</div>
+        </div>
+        <div class="grant-access">
+            <img src="Images/location.png" alt="">
+            <p>Grant Location Access</p>
+            <p>Allow access to see Weather Information</p>
+            <button class="btn-access">Grant Access</button>
+        </div>
+        <div class="weather-data">
+            <div class="city-container">
+                <p class="city"></p>
+                <img class="city-icon" >
+            </div>
+            <p class="description"></p>
+            <img class="weather-icon" src="" alt="">
+            <p class="temperature"></p>
+            <div class="parameter-container">
+                <div class="parameter">
+                    <img src="Images/wind.png" alt="">
+                    <p>WindSpeed</p>
+                    <p class="WindSpeed"></p>
+                </div>
+                <div class="parameter">
+                    <img src="Images/humidity.png" alt="">
+                    <p>humidity</p>
+                    <p class="humidity"></p>
+                </div>
+                <div class="parameter">
+                    <img src="Images/cloud.png" alt="">
+                    <p>Clouds</p>
+                    <p class="clouds"></p>
+                </div>
+            </div>
+        </div>
+        <div class="search-weather">
+            <form action="" class="form">
+                <input type="text" class="searchCity">
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="loading">
+            <img src="Images/loading.gif" alt="">
+            <p>loading</p>
+        </div>
+        <div class="error">
+            <img src="Images/not-found.png" alt="">
+            <p>Opps City not Found</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
